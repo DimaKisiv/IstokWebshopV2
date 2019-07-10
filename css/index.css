@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Rubik+Mono+One&display=swap');
+:root {
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+main,
+footer,
+nav,
+p,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
+.top-header nav {
+    background-image: linear-gradient(#afafaf, #ffffff);
+}
+
+.top-header nav p{
+    margin:10px;
+}
+
+.top-header .top-menu {
+    display: flex;
+    padding: 0;
+    justify-content: space-around;
+    flex: 1;
+}
+
+.top-header .top-menu li {
+    list-style-type: none;
+}
+
+.top-header .top-menu li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    padding: 2px;
+}
+
+.top-header .top-menu li a:hover {
+    border-bottom: 2px solid black;
+}
+
+.top-header .logo {
+    width: 100px;
+}
+
+.top-header img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+@media (min-width:600px) {
+    .top-header nav {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width:375px) {
+    .top-header .top-menu a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:330px) {
+    .top-header .top-menu a {
+        font-size: 13px;
+    }
+}
+
+
+
+.top-header .jumbotron {
+    background-image: url(../img/grass.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.top-header .jumbotron h2 {
+  color: #ffee56;
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 1.6em;
+  text-align: center;
+  max-width: 880px;
+  width: 80%;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  z-index: 2;
+  padding: 20px;
+}
+
+.jumbotron .button {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #FFFFFF;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 300;
+    color: #FFFFFF;
+    text-align: center;
+    transition: all 0.2s;
+    background-color: transparent;
+}
+
+.order-form .button {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid rgb(59, 59, 59);
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    transition: all 0.2s;
+    background-color: transparent;
+}
+
+.jumbotron .button:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.order-form .button:hover {
+    color: #FFFFFF;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.card-button {
+    border-color: black;
+    color: black;
+}
+
+.card-button:hover {
+    background-color: black;
+    color: white;
+}
+
+@media all and (max-width:30em) {
+    .button {
+        margin: 0.4em auto;
+    }
+}
+
+.benefits-section {
+    background-color: #ff000024;
+}
+
+.benefits-section h2 {
+    text-align: center;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+.benefit-list .benefit-card img {
+    width: 100px;
+    display: block;
+    margin: auto;
+}
+
+.benefit-list .benefit-card h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.benefit-list .benefit-card {
+    padding: 2px;
+}
+
+.benefit-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2px;
+}
+
+
+@media (min-width:600px) {
+    .benefit-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+
+.feedback-section {
+    background-color: #1b00ff26;
+}
+
+.feedback-section .feedback-story {
+    padding-top: 10px;
+}
+
+.feedback-section h2 {
+    padding: 20px;
+    text-align: center;
+}
+
+.feedback-section .feedback-story p {
+    margin-left: 10px;
+}
+
+.feedback-section .feedback-story img {
+    width: 100%;
+}
+
+@media (min-width:600px) {
+    .feedback-section .feedback-story img {
+        width: 320px;
+        float: left;
+        margin: 20px;
+    }
+    .feedback-section .feedback-story {
+        display: inline-block;
+    }
+}
+
+.feedback-section .feedback-story h3 {
+    margin: 10px;
+}
+
+
+
+.companies-section {
+    background-color: #fff7003b;
+}
+
+.companies-section h2 {
+    text-align: center;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+.company-list .company-card img {
+    width: 100px;
+    display: block;
+    margin: auto;
+}
+
+.company-list .company-card h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+.company-list .company-card {
+    padding: 2px;
+}
+
+.company-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2px;
+}
+
+
+@media (min-width:600px) {
+    .company-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.footer {
+    display: inline-block;
+    background-color: black;
+    color: white;
+}
+
+@media (min-width:600px) {
+    .footer {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.footer .aboutus {
+    margin: 20px;
+}
+
+.footer .map {
+    margin: 20px;
+}
+
+.footer .map h1{
+    display:none
+}
+
+.footer .map img {
+    width: 100%;
+}
+
+.order-section .order-form {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+}
+
+.order-section .order-form label {
+    display:flex;
+    justify-content: flex-end;
+    margin-right:10%;
+}
+
