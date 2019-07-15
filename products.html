@@ -40,7 +40,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-3">
-                <h1 class="my-4">ІСТОК</h1>
+                    <img class="istoklogo" src="img/istoklogo.jpg" alt="Істок Лого">
                 <div class="list-group categories">
                 </div>
             </div>
@@ -81,12 +81,13 @@
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
-                <div class="input-group search">
+                <div class="input-group search" id="search-bar">
                         <input type="text" class="form-control search" placeholder="Search">
                         <span class="input-group-btn">
                                 <button class="btn btn-search" type="button"><i class="fa fa-search fa-fw"></i> Search</button>
                               </span>
                       </div>
+                      <div id="navigation"></div>
                 <div class="row" id="products-container">
                 </div>
                 <!-- /.row -->
@@ -108,7 +109,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="productInfoLabel">Product Info</h5>
+                    <h5 class="modal-title" id="productInfoLabel">Інформація по продукту</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -151,7 +152,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрити</button>
                     <button class="btn btn-primary order">Order</button>
                 </div>
             </div>

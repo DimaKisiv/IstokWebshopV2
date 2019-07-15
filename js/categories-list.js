@@ -15,7 +15,7 @@ class CategoriesList {
         let productListDomString = '';
         categories.forEach(cat =>{
             productListDomString += 
-            `<a href="#products-container" data-id="${cat.id}" 
+            `<a href="#search-bar" data-id="${cat.id}" 
             class="list-group-item .smooth" >${cat.title}</a>`;
         });
         container.html(productListDomString);

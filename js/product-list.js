@@ -42,12 +42,12 @@ class ProductList {
         <button class="btn btn-info" data-toggle="modal"
         data-target="#productInfoModal" data-id="${
           product.id
-        }">Info
+        }">Деталі
       </button>
       <button class="btn btn-primary buy" data-id="${
         product.id
       }">
-        $${product.price} - Buy
+        $${product.price} - Купити
       </button>
         </div>
       </div>
@@ -69,20 +69,20 @@ class ProductList {
       modal.find('.modal-body .card-text').text(product.description);
       modal
         .find('button.buy')
-        .text(`${product.price} - Buy`)
+        .text(`${product.price} - Купити`)
         .data('id', id);
     });
     $('.card.product button.buy, #productInfoModal button.buy').click(event => {
       const button = $(event.target);
       const id = button.data('id');
       this.cart.addProduct(id);
-      window.showAlert('Product added to cart');
+      window.showAlert('Продукт додано в корзину');
     });
     $('.btn.btn-primary.buy').click(event => {
       const button = $(event.target);
       const id = button.data('id');
       this.cart.addProduct(id);
-      window.showAlert('Product added to cart');
+      window.showAlert('Продукт додано в корзину');
     });
   }
 }
