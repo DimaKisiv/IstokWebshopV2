@@ -25,6 +25,14 @@ body {
     margin: auto;
 }
 
+.alert {
+    position: fixed;
+    top: 50px; 
+    width: 50%;
+    left: 25%;
+    z-index: 1051;
+  }
+
 .top-header nav {
     background-image: linear-gradient(#afafaf, #ffffff);
 }
@@ -151,7 +159,7 @@ body {
 }
 
 .benefits-section {
-    background-color: #ff000024;
+    background-color: #FFFFFF;
 }
 
 .benefits-section h2 {
@@ -191,7 +199,7 @@ body {
 
 
 .feedback-section {
-    background-color: #1b00ff26;
+    background-color:#fff7003b;
 }
 
 .feedback-section .feedback-story {
@@ -298,9 +306,10 @@ body {
 }
 
 .order-section {
-    background: linear-gradient(90deg, rgb(226, 5, 255), rgb(255, 220, 253),
-    rgb(255, 220, 253) , rgb(255, 220, 253) ,
-    rgb(255, 220, 253) , rgb(226, 5, 255));
+    background: linear-gradient(90deg, rgb(49, 197, 34),
+     rgb(255, 255, 255),
+     rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255),
+     rgb(49, 197, 34));
     padding:10px;
 }
 
@@ -322,6 +331,15 @@ body {
     display:flex;
     justify-content: flex-end;
     margin-bottom: 2px;
+}
+
+@media (max-width:600px) {
+    .order-section .order-form label {
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 2px;
+    }
 }
 
 .order-section h1 {

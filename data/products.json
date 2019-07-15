@@ -1,0 +1,82 @@
+[
+    {
+        "id": "1",
+        "categoryId": "2",
+        "title": "Вітамінна",
+        "image": "kashavitamin.jpg",
+        "description": "Каша з вітамінним комплексом.",
+        "price": 499.99
+    },
+    {
+        "id": "2",
+        "categoryId": "2",
+        "title": "Дієтична",
+        "image": "kashadietic.jpg",
+        "description": "Дієтична каша. Дуже кльова.",
+        "price": 199.99
+    },
+    {
+        "id": "3",
+        "categoryId": "2",
+        "title": "Смачна",
+        "image": "kashatasty.jpg",
+        "description": "Супер смачна смаковита смаком на смаковій смачності.",
+        "price": 249.99
+    },
+    {
+        "id": "4",
+        "categoryId": "2",
+        "title": "Комплексна",
+        "image": "kashacomplex.jpg",
+        "description": "Всі потрібні елементи включені в склад каші.",
+        "price": 229.99
+    },
+    {
+        "id": "5",
+        "categoryId": "3",
+        "title": "Хлорофіл",
+        "image": "chlorofil.jpg",
+        "description": "Рідка їжа для молодості і краси Дуолайф.",
+        "price": 729.99
+    },
+    {
+        "id": "6",
+        "categoryId": "3",
+        "title": "Колаген",
+        "image": "collagen.jpg",
+        "description": "Супер крута штука для енергетчного заряду Дуолайф.",
+        "price": 829.99
+    },
+    {
+        "id": "7",
+        "categoryId": "1",
+        "title": "Вівсяне толокно",
+        "image": "toloknovivsa.jpg",
+        "description": "Толокно з вівся.",
+        "price": 99999.99
+    },
+    {
+        "id": "8",
+        "categoryId": "1",
+        "title": "Житнє толокно",
+        "image": "toloknozhito.jpg",
+        "description": "Толокно з жита.",
+        "price": 99999.99
+    },
+    {
+        "id": "9",
+        "categoryId": "1",
+        "title": "Амарантове толокно",
+        "image": "toloknoamarant.jpg",
+        "description": "Толокно з амаранту.",
+        "price": 9999.99
+    },
+    {
+        "id": "10",
+        "categoryId": "4",
+        "title": "Ромашковий",
+        "image": "tearomashka.jpg",
+        "description": "Ромашковий чай Грін Віза",
+        "price": 2499.99
+    }
+]

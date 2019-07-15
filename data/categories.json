@@ -1,0 +1,22 @@
+[
+    {
+        "id": "1",
+        "title": "Суперфуди",
+        "image": "superfood.jpg"
+    },
+    {
+        "id": "2",
+        "title": "Каші",
+        "image": "kashi.jpg"
+    },
+    {
+        "id": "3",
+        "title": "Суплементи",
+        "image": "supplements.png"
+    },
+    {
+        "id": "4",
+        "title": "Чаї",
+        "image": "tea.jpg"
+    }
+]

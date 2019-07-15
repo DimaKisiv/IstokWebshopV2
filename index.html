@@ -8,6 +8,7 @@
     <title>Істок</title>
     <link rel="icon" href="img/favicon.ico">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
 <body>
@@ -58,9 +59,7 @@
                 <label>Емейл <input type="text" id="inpEmail" placeholder="@"></label>
              </div>
              <div class="order-buttons">
-                <a class="button" id="butSaveToStorage">Зберегти в localStorage</a>
-                <a class="button" id="butLoadFromStorage">Загрузити з localStorage</a>
-                <a class="button" id="butValidateYourEmail">Перевірити чи емейл справжній</a>
+                <a class="button" id="butMakeOrder">Замовити</a>
                 <div id="divResult"></div>
              </div>
         </section>
@@ -129,7 +128,12 @@
             <img src="img/map.png" alt="Карта Істок">
         </article>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
+    <script src="js/alert-window.js"></script>
 </body>
 
 </html>

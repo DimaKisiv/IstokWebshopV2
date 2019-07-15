@@ -2,46 +2,18 @@ const STORAGE_ORDER = 'orders_in_storage';
 const EMAIL_VALIDATION_URL = 'https://api.trumail.io/v2/lookups/json?email=';
 
 document.addEventListener('DOMContentLoaded', () => {
-    document.querySelector('#butSaveToStorage')
-        .addEventListener('click', saveToStorageClick);
-    document.querySelector('#butLoadFromStorage')
-        .addEventListener('click', loadFromStorageClick);
-    document.querySelector('#butValidateYourEmail')
-        .addEventListener('click', validateEmailClick);
+    document.querySelector('#butMakeOrder')
+        .addEventListener('click', makeOrderClick);
 });
 
-function saveToStorageClick() {
+function makeOrderClick() {
     localStorage.setItem(STORAGE_ORDER, JSON.stringify(orderFormDOM));
-    displayResult(orderFormDOM);
+    showAlert("Замовлення відправлено");
 }
 
-function loadFromStorageClick() {
-    let retrievedObject = JSON.parse(localStorage.getItem(STORAGE_ORDER));
-    if (retrievedObject) {
-        fillInputs(retrievedObject);
-    }
-}
 
-function validateEmailClick() {
-    fetch(EMAIL_VALIDATION_URL + orderFormDOM.email)
-        .then(response => response.json())
-        .then(jsonStr => displayResult(jsonStr));
-}
 
-function displayResult(trumailResult) {
-    document.querySelector('#divResult').innerHTML = '';
-    for (let key in trumailResult) {
-        document.querySelector('#divResult').innerHTML +=
-            '<p><strong>' + key + '</strong>: ' + trumailResult[key] + '</p>';
-    };
-}
 
-function fillInputs(order) {
-    orderFormDOM.name = order.name;
-    orderFormDOM.surname = order.surname;
-    orderFormDOM.mobile = order.mobile;
-    orderFormDOM.email = order.email;
-};
 
 const orderFormDOM = {
     get name() { return document.querySelector('#inpName').value; },
