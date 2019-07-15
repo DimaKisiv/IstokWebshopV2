@@ -9,6 +9,7 @@ class ProductList {
       .then(result => result.json())
       .then(productsResult => {
         this.products = productsResult;
+        this.allProducts = productsResult;
         this.products = categoryId 
         ? this.products.filter(prod => prod.categoryId == categoryId) 
         : this.products;
@@ -21,7 +22,7 @@ class ProductList {
       });
   }
   getProductById(id) {
-    return this.products.find(el => el.id === id);
+    return this.allProducts.find(el => el.id === id);
   }
   renderProducts(container) {
     let productListDomString = '';
